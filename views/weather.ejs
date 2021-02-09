@@ -1,0 +1,12 @@
+<h1>This is the weather page</h1>
+<h2>Your location is: <%= location %></h2>
+<h3>It is currently <%= temp %> Degrees Fahrenheit</h3>
+
+<% forecast.forEach(function(currentCast) { %>
+    <p>For the day: <%= currentCast.date %> </p>
+    <p>Day of the week: <%= currentCast.day %> </p>
+    <p>Low: <%= currentCast.low %> Degrees Fahrenheit</p>
+    <p>High: <%= currentCast.high %> Degrees Fahrenheit</p>
+    <p>Prediction: <%= currentCast.skytextday %></p>
+    <br><br>
+<% }); %>

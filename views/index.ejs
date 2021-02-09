@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boiler Plate</title>
+</head>
+<body>
+    <%- include('../partials/header.ejs') %>
+    <body>
+        <h1>Hello, <%= name %>!</h1>
+        <p>You are <%= age %> years old in human years buuut</p>
+        <% const dogAge = age*7%>
+        <p>you are <%= dogAge %> years old in dog years</p>
+        
+        <% let status = "Hello"
+          if (dogAge<100) {
+            status = 'young' 
+          } else {
+            status = 'old' 
+        } %>
+        <h3>This means you are <%=status%>!</h3>
+    </body>
+</body>
+</html>
